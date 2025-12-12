@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./stylefordashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <nav>
+        <a href="https://shecanfoundation.org">
+        <img src="./logo.jfif" alt="logo">
+        <p>She Can Fondation</p>
+        </a>
+   </nav>
+
+   <div class="main">
+    <h1><span id="name"></span></h1>
+    <p class="email"><i class="fa-solid fa-envelope"></i> <span id="email"></span></p>
+    <hr>
+    <p class="ref">
+        Referral code: <span id="referral"></span>
+        <button onclick="copyReferral()"><i class="fa-regular fa-copy"></i></button></p>
+    <p>Donation Raised: Rs <span id="donationAmount"></span></p>
+    <a href="./leaderboard.html">check leaderboard</a>
+   </div>
+
+    <script src="./scriptdb.js">
+    </script>
+</body>
+</html>
